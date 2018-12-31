@@ -1,0 +1,451 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+	outline:none;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+	font-weight:bold;
+}
+i, em {
+	font-style:italic;
+}
+a {
+    color: #333;
+}
+a:focus,
+a:hover {
+	text-decoration: none !important;
+}
+address {
+	font-style:normal;
+}
+img {
+	max-width: 100%;
+}
+button:focus {
+	outline: 0 !important;
+}
+
+/* MAIN CSS */
+html, body {
+	height: 100%;
+}
+
+body {
+	background: #fff;
+	font-family: 'Open Sans', sans-serif !important;
+	font-size: 14px;
+	color: #fff;
+}
+body.login-bg {
+	background: url(../images/bg.png) no-repeat right bottom;
+	background-size: cover;
+}
+.login-bx {
+	background: url(../images/bg-login-bx.png) #fff no-repeat left top;
+	width: 977px;
+	height: 636px;
+	margin: 0 auto;
+	border-radius: 30px;
+	overflow: hidden;
+	position: relative;
+	top: 130px;
+	box-shadow: rgba(0,0,0,0.15) 15px 0 75px;
+}
+.left-bx {
+	width: 50%;
+	float: left;
+	text-align: right;
+	color: #fff;
+	padding: 530px 20px 0 0;
+}
+.right-bx {
+	width: 50%;
+	float: left;
+	padding: 100px 70px 0 70px;
+}
+.left-bx .login-logo {
+	width: 160px;
+	float: right;
+	padding-bottom: 5px;
+}
+.left-bx .copyright {
+	width: 100%;
+	display: block;
+	float: right;
+}
+.right-bx h3 {
+	font-size: 56px;
+	font-weight: 600;
+	padding-bottom: 50px;
+}
+.login-credentials .email,
+.login-credentials .password {
+	background: #fff;
+	width: 100%;
+	height: 70px;
+	line-height: 70px;
+	padding: 0 15px;
+	color: #333;
+	font-size: 22px;
+	margin-bottom: 10px;
+	border: 0;
+	border-bottom: 1px solid #e2e2e2;
+}
+.login-btn {
+	background: rgba(119,121,249,1);
+	background: -moz-linear-gradient(-45deg, rgba(119,121,249,1) 0%, rgba(60,63,247,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(119,121,249,1)), color-stop(100%, rgba(60,63,247,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(119,121,249,1) 0%, rgba(60,63,247,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(119,121,249,1) 0%, rgba(60,63,247,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(119,121,249,1) 0%, rgba(60,63,247,1) 100%);
+	background: linear-gradient(135deg, rgba(119,121,249,1) 0%, rgba(60,63,247,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7779f9', endColorstr='#3c3ff7', GradientType=1 );
+	width: 185px;
+	height: 58px;
+	line-height: 53px;
+	text-align: center;
+	display: block;
+	color: #fff;
+	font-size: 24px;
+	margin-top: 50px;
+	border-radius: 29px;
+	border: 0;
+	cursor: pointer;
+	-webkit-box-shadow: 0px 13px 18px 0px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0px 13px 18px 0px rgba(0,0,0,0.15);
+	box-shadow: 0px 13px 18px 0px rgba(0,0,0,0.15);
+}
+
+header {
+	background: #fff;
+	height: 90px;
+	line-height: 90px;
+}
+.top-bar {
+	background: rgba(111,112,198,1);
+	background: -moz-linear-gradient(-45deg, rgba(111,112,198,1) 0%, rgba(75,77,184,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(111,112,198,1)), color-stop(100%, rgba(75,77,184,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(111,112,198,1) 0%, rgba(75,77,184,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(111,112,198,1) 0%, rgba(75,77,184,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(111,112,198,1) 0%, rgba(75,77,184,1) 100%);
+	background: linear-gradient(135deg, rgba(111,112,198,1) 0%, rgba(75,77,184,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6f70c6', endColorstr='#4b4db8', GradientType=1 );
+	height: 80px;
+	-webkit-box-shadow: 0px 13px 18px 0px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0px 13px 18px 0px rgba(0,0,0,0.15);
+	box-shadow: 0px 13px 18px 0px rgba(0,0,0,0.15);
+}
+.logo {
+	width: 170px;
+}
+.top-nav ul {
+	float: left;
+}
+.top-nav li {
+	width: 180px;
+	height: 80px;
+	float: left;
+	font-size: 18px;
+	text-align: center;
+	line-height: 76px;
+}
+.top-nav li a {
+	color: #fff;
+	display: block;
+	border-bottom: 0 solid #fff;
+}
+.top-nav li a:hover,
+.top-nav li a.selected {
+	background: rgba(255,255,255,0.10);
+	border-bottom: 4px solid #fff;
+}
+.add-questions-btn,
+.publish-btn {
+	background: rgba(255,149,78,1);
+	background: -moz-linear-gradient(-45deg, rgba(255,149,78,1) 0%, rgba(255,103,2,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,149,78,1)), color-stop(100%, rgba(255,103,2,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(255,149,78,1) 0%, rgba(255,103,2,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(255,149,78,1) 0%, rgba(255,103,2,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(255,149,78,1) 0%, rgba(255,103,2,1) 100%);
+	background: linear-gradient(135deg, rgba(255,149,78,1) 0%, rgba(255,103,2,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff954e', endColorstr='#ff6702', GradientType=1 );
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	display: block;
+	color: #fff;
+	font-size: 14px;
+	float: right;
+	margin-top: 20px;
+	border-radius: 29px;
+	border: 0;
+	cursor: pointer;
+	-webkit-box-shadow: 0px 13px 18px 0px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0px 13px 18px 0px rgba(0,0,0,0.15);
+	box-shadow: 0px 13px 18px 0px rgba(0,0,0,0.15);
+}
+.add-questions-btn img {
+	margin: -5px 3px 0 0;
+}
+.title-area {
+	padding-top: 38px;
+	line-height: 80px;
+}
+.title-area h4 {
+	line-height: 80px;
+	font-size: 20px;
+	padding-left: 20px;
+	font-weight: bold;
+	color: #585858;
+	display: inline-block;
+}
+.title-area .choose-option {
+	width: 200px;
+	float: right;
+}
+.choose-option .single {
+	float: left;
+	margin-right: 30px;
+}
+.choose-option label {
+	margin-left: 5px;
+	font-weight: 600;
+}
+.question-form input,
+.question-form textarea {
+	width: 48%;
+	height: 60px;
+	line-height: 60px;
+	float: left;
+	padding: 0 15px;
+	margin-bottom: 30px;
+	border-radius: 7px;
+	border: 2px solid #e5e5e5;
+}
+.question-form textarea {
+	width: 100%;
+	height: 100px;
+	line-height: normal;
+	padding: 15px;
+}
+.action-area {
+	width: 400px;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+.action-area input.add-more-btn {
+	background: #fff;
+	width: inherit;
+	height: inherit;
+	line-height: inherit;
+	padding: 10px 25px;
+	color: #999;
+	cursor: pointer;
+	border: 0;
+	float: none;
+	margin: 0 auto;
+	border-radius: 25px;
+	border: 1px solid #ececec;
+}
+.action-area input.cancel-btn,
+.action-area input.login-btn {
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 30px;
+	margin: 0 15px;
+	border: 0;
+	float: none;
+	display: inline-block;
+}
+.action-area input.cancel-btn {
+	background: #ececec;
+	color: #6a6a6a;
+	font-size: 18px;
+	cursor: pointer;
+}
+.action-area .padding-top {
+	padding-top: 150px;
+}
+.people-responded {
+	height: 40px;
+	line-height: 40px;
+	color: #ccc;
+	float: right;
+	font-size: 14px;
+	padding: 0 15px;
+	margin-top: 23px;
+	border-radius: 20px;
+	border: 2px solid #d7d7d7;
+}
+.people-responded .orange,
+.people-responded .purple {
+	font-size: 18px;
+	line-height: 36px;
+	color: #f76404;
+	font-weight: 600;
+	padding: 0 3px;
+}
+.people-responded .purple {
+	color: #4b4db8;
+}
+.questions-list,
+.all-questions-list {
+	background: #f9f9f9;
+	border-radius: 8px;
+	-webkit-box-shadow: 0px 13px 18px 0px rgba(0,0,0,0.10);
+	-moz-box-shadow: 0px 13px 18px 0px rgba(0,0,0,0.10);
+	box-shadow: 0px 13px 18px 0px rgba(0,0,0,0.10);
+}
+.questions-list li,
+.all-questions-list li {
+	height: 90px;
+	display: table;
+	margin: 0 15px;
+	border-top: 1px solid #e0e0e0;
+}
+.questions-list li:first-child,
+.all-questions-list li:first-child {
+	border-top: none;
+}
+.questions-list li:hover,
+.questions-list li.selected {
+	margin: 0 0;
+	border-top: 1px solid transparent;
+}
+.questions-list li a,
+.all-questions-list li a {
+	color: #5b5b5b;
+	display: table-cell;
+	vertical-align: middle;
+}
+.questions-list li:hover a,
+.questions-list li.selected a {
+	background: rgba(111,112,198,1);
+	background: -moz-linear-gradient(-45deg, rgba(111,112,198,1) 0%, rgba(75,77,184,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(111,112,198,1)), color-stop(100%, rgba(75,77,184,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(111,112,198,1) 0%, rgba(75,77,184,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(111,112,198,1) 0%, rgba(75,77,184,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(111,112,198,1) 0%, rgba(75,77,184,1) 100%);
+	background: linear-gradient(135deg, rgba(111,112,198,1) 0%, rgba(75,77,184,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6f70c6', endColorstr='#4b4db8', GradientType=1 );
+	height: 80px;
+	color: #fff;
+	padding: 0 15px;
+	border-radius: 8px;
+	-webkit-box-shadow: 0px 13px 18px 0px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0px 13px 18px 0px rgba(0,0,0,0.15);
+	box-shadow: 0px 13px 18px 0px rgba(0,0,0,0.15);
+}
+.question-view {
+	padding-top: 13px;
+}
+
+.question-view strong {
+	color: #777;
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 600;
+}
+.all-questions-list li {
+	display: block;
+}
+.all-questions-list li a {
+	line-height: 90px;
+	display: inline-block;
+}
+.close-btn {
+	background:  rgba(246,79,107,1);
+	background: -moz-linear-gradient(-45deg, rgba(246,79,107,1) 0%, rgba(243,20,57,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(246,79,107,1)), color-stop(100%, rgba(243,20,57,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(246,79,107,1) 0%, rgba(243,20,57,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(246,79,107,1) 0%, rgba(243,20,57,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(246,79,107,1) 0%, rgba(243,20,57,1) 100%);
+	background: linear-gradient(135deg, rgba(246,79,107,1) 0%, rgba(243,20,57,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f64f6b', endColorstr='#f31439', GradientType=1 );
+	width: 22px;
+	height: 22px;
+	line-height: 14px;
+	display: block;
+	border-radius: 11px;
+	float: left;
+	margin-top: 34px;
+	text-align: center;
+	margin-right: 15px;
+	border: 0;
+	cursor: pointer;
+	-webkit-box-shadow: 0px 13px 18px 0px rgba(244,36,71,0.15);
+	-moz-box-shadow: 0px 13px 18px 0px rgba(244,36,71,0.15);
+	box-shadow: 0px 13px 18px 0px rgba(244,36,71,0.15);
+}
+.publish-btn {
+	background: rgba(119,121,249,1);
+	background: -moz-linear-gradient(-45deg, rgba(119,121,249,1) 0%, rgba(60,63,247,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(119,121,249,1)), color-stop(100%, rgba(60,63,247,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(119,121,249,1) 0%, rgba(60,63,247,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(119,121,249,1) 0%, rgba(60,63,247,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(119,121,249,1) 0%, rgba(60,63,247,1) 100%);
+	background: linear-gradient(135deg, rgba(119,121,249,1) 0%, rgba(60,63,247,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7779f9', endColorstr='#3c3ff7', GradientType=1 );
+	width: 120px;
+	float: right;
+	margin: 25px 0 0 20px;
+}
+.publish-btn.published {
+	background: #9a9a9a;
+	box-shadow: none;
+	cursor: default;
+}
+.all-questions-list .link {
+	float: right;
+	color: #565656;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:750px) and (min-width:320px) {
+	
+}

@@ -1,0 +1,6 @@
+{
+    "env":{
+        "mongoDB_PW":"RePWD9911",
+        "JWT_KEY":"secret"
+    }
+}

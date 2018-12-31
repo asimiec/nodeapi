@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dummy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/custom-js.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <header class=" clearfix">
+      <div class="container">
+        <div class="logo"><img src="images/logo-dummy.png" alt="" /></div>
+      </div>
+    </header>
+    <div class="top-bar clearfix">
+      <div class="container">
+        <div class="top-nav">
+          <ul>
+            <li><a href="#" title="View Survey">View Survey</a></li>
+            <li>
+              <a href="#" title="Create Survey" class="selected"
+                >Create Survey</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="question-bx clearfix">
+        <div class="title-area">
+          <h4>Question 1.</h4>
+          <form class="choose-option">
+            <div class="single">
+              <input type="radio" name="single" id="single" />
+              <label for="single">Single</label>
+            </div>
+            <div class="multiple">
+              <input type="radio" name="single" id="multiple" />
+              <label for="multiple">Multiple</label>
+            </div>
+          </form>
+        </div>
+        <form class="question-form clearfix">
+          <div class="clearfix">
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="How would you like our Office Culture?"
+            ></textarea>
+            <input type="text" placeholder="Response 1" />
+            <input type="text" class="float-right" placeholder="Response 2" />
+          </div>
+          <div class="action-area">
+            <div class="clearfix">
+              <input type="submit" class="add-more-btn" value="Add More" />
+            </div>
+            <div class="clearfix padding-top">
+              <input type="submit" class="cancel-btn" value="Cancel" />
+              <input type="submit" class="login-btn" value="Save" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

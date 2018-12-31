@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Dummy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/custom-js.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.js"></script>
+</head>
+
+<body>
+    <header class=" clearfix">
+        <div class="container">
+            <div class="logo"><img src="images/logo-dummy.png" alt=""></div>
+        </div>
+    </header>
+    <div class="top-bar clearfix">
+        <div class="container">
+            <div class="top-nav">
+                <ul>
+                    <li><a href="#" title="View Survey" class="selected">View Survey</a></li>
+                    <li><a href="#" title="Create Survey">Create Survey</a></li>
+                </ul>
+                <button class="add-questions-btn"><img src="images/plus-ico.png" alt=""> Add Question</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="summry-view clearfix">
+            <div class="title-area">
+                <h4>All Questions</h4>
+                <div class="people-responded">
+                    <span class="orange">10</span> out of <span class="purple">43</span>
+                </div>
+            </div>
+            <div class="row">
+                <section class="col-md-4">
+                    <div class="questions-list">
+                        <ul>
+                            <li class="selected"><a href="">What orem ipsum dolor sit amet, consectetur adipisicing elit, sed do ...</a></li>
+                            <li><a href="">What orem ipsum dolor sit amet, consectetur adipisicing elit, sed do ...</a></li>
+                            <li><a href="">What orem ipsum dolor sit amet, consectetur adipisicing elit, sed do ...</a></li>
+                            <li><a href="">What orem ipsum dolor sit amet, consectetur adipisicing elit, sed do ...</a></li>
+                            <li><a href="">What orem ipsum dolor sit amet, consectetur adipisicing elit, sed do ...</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="col-md-8">
+                    <div class="question-view">
+                        <strong>What orem ipsum dolor sit amet, consectetur adipisicing elit, sed do sit amet, eiusmod tempor?</strong>
+                    </div>
+                    <canvas id="myChart" width="730" height="400"></canvas>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
