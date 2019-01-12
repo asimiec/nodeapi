@@ -42,16 +42,36 @@ router.post("/login", (req, res, next) => {
           next
         ); //Get login user details
       },
-      function(next) {
-        let token = globalServices.generateJwt(req, res); //Call generate access-token method of global service
+      // function(next) {
+      //   console.log('asim');console.log()
+      //  if(response){
+      //     let token = globalServices.generateJwt(req, res); //Call generate access-token method of global service
 
-        res.cookie("token", token, { signed: true });
-        res.status(200).redirect("/questions");
-        //res.status(200).json({ status: 'success', 'access-token': token }); //Send access token to the user
-      }
+      //     res.cookie("token", token, { signed: true });
+      //     if(req.userDetails.role == 'role'){
+      //     res.status(200).redirect("/questions");
+      //     }else{
+      //       res.status(200).json({ status: 'success', 'access-token': token }); //Send access token to the user
+      //     }
+      //  }else{
+      //     res.status(409).json({ status: "error", message: "Email id or password is not matching" });
+      //  }
+       
+      // }
     ],
     function(err, result) {
-      logger.error(err);
+      if(result){
+         let token = globalServices.generateJwt(result); //Call generate access-token method of global service
+         res.cookie("token", token, { signed: true });
+         if(result.role == 'admin'){
+         res.status(200).redirect("/questions");
+         }else{
+           res.status(200).json({ status: 'success', 'access-token': token }); //Send access token to the user
+         }
+      }else{
+         res.status(409).json({ status: "error", message: "Email id or password is not matching" });
+      }
+
     }
   );
 });

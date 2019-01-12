@@ -6,7 +6,7 @@ helmet = require("helmet");
 // set the view engine to ejs
 app.set("view engine", "ejs");
 var server              = require('http').createServer(app);
-const port = process.env.PORT || 3702;
+const port = process.env.PORT || 3703;
 server.listen(port, function () {
   console.log(`Example app listening on port ${port}! Go to https://localhost:${port}/`)
 })

@@ -35,12 +35,7 @@ userSchema.methods.getUserDetails = function(
       req.userDetails = response._doc;
       next(null, response._doc);
     } else {
-      res
-        .status(409)
-        .json({
-          status: "error",
-          message: "Email id or password is not matching"
-        });
+      next(err, null);
     }
   });
 };

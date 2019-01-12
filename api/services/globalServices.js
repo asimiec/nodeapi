@@ -34,17 +34,18 @@ module.exports.validateAccessToken = function(req, res, next) {
   }
 };
 
-module.exports.generateJwt = function(req, res) {
+module.exports.generateJwt = function(result) {
   return (
     "Bearer~" +
     jwt.sign(
       {
-        _id: req.userDetails._id,
-        nickName: req.userDetails.nickName,
-        emailId: req.userDetails.emailId,
-        password: req.userDetails.password,
-        status: req.userDetails.status,
-        createdOn: req.userDetails.createdOn,
+        _id: result._id,
+        nickName: result.nickName,
+        emailId: result.emailId,
+        password: result.password,
+        role: result.role,
+        status: result.status,
+        createdOn: result.createdOn,
         exp: Date.now() + 1 * 1 * 05 * 60 * 1000
       },
       "R2VBRK3JC7QOB4CL6B5VN5532UR7LZXE"
