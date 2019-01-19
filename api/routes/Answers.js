@@ -15,9 +15,9 @@ var globalServices = require("../services/globalServices");
 router.get("/add", (req, res, next) => {
   async.waterfall(
     [
-      // function(next) {
-      //   globalServices.validateAccessToken(req, res, next); //Validate access token
-      // }
+      function(next) {
+        globalServices.validateAccessToken(req, res, next); //Validate access token
+      }
     ],
     function(err, result) {
       if (err) {
@@ -48,14 +48,11 @@ router.post("/add", (req, res, next) => {
         newAnswer
           .save()
           .then(result => {
-            console.log(result);
             next(null, result);
           })
           .catch(err => {
             next(err, null);
-          });  // function(next) {
-      //   globalServices.validateAccessToken(req, res, next); //Validate access token
-      // }
+          });
       }
     ],
     function(err, result) {
@@ -84,7 +81,8 @@ router.get("/", (req, res, next) => {
     function(err, result) {
       if (err) {
         res.status(500).json({ error: err });
-      } else {console.log(result);
+      } else {
+        console.log(result);
         //res.json({ questionList: result });
         res.render("pages/list-survey", { questionList: result });
       }

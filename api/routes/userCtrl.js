@@ -41,37 +41,28 @@ router.post("/login", (req, res, next) => {
           res,
           next
         ); //Get login user details
-      },
-      // function(next) {
-      //   console.log('asim');console.log()
-      //  if(response){
-      //     let token = globalServices.generateJwt(req, res); //Call generate access-token method of global service
-
-      //     res.cookie("token", token, { signed: true });
-      //     if(req.userDetails.role == 'role'){
-      //     res.status(200).redirect("/questions");
-      //     }else{
-      //       res.status(200).json({ status: 'success', 'access-token': token }); //Send access token to the user
-      //     }
-      //  }else{
-      //     res.status(409).json({ status: "error", message: "Email id or password is not matching" });
-      //  }
-       
-      // }
+      }
     ],
     function(err, result) {
-      if(result){
-         let token = globalServices.generateJwt(result); //Call generate access-token method of global service
-         res.cookie("token", token, { signed: true });
-         if(result.role == 'admin'){
-         res.status(200).redirect("/questions");
-         }else{
-           res.status(200).json({ status: 'success', 'access-token': token }); //Send access token to the user
-         }
-      }else{
-         res.status(409).json({ status: "error", message: "Email id or password is not matching" });
+      if (result) {
+        let token = globalServices.generateJwt(result); //Call generate access-token method of global service
+        //  if(result.role == 'admin'){
+        res.cookie("token", token, { signed: true });
+        //  res.status(200).redirect("/questions");
+        //  }else{
+        // res.status(200).json({ status: 'success', 'access-token': token }); //Send access token to the user
+        res.status(200).json({ sucess: true, err: null, token });
+        // }
+      } else {
+        // res.status(409).json({ status: "error", message: "Email id or password is not matching" });
+        res
+          .status(401)
+          .json({
+            sucess: false,
+            token: null,
+            err: "Username or password is incorrect"
+          });
       }
-
     }
   );
 });

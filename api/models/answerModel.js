@@ -15,4 +15,6 @@ var answerSchema = dbConnection.Schema(
   }
 );
 
+answerSchema.index({ questionId: 1 }, { unique: true });
+
 module.exports = dbConnection.db.model("answers", answerSchema);
