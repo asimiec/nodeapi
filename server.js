@@ -7,6 +7,6 @@ helmet = require("helmet");
 app.set("view engine", "ejs");
 var server              = require('http').createServer(app);
 const port = process.env.PORT || 3704;
-server.listen(port, function () {
+server.listen(port, ,'172.31.24.18',function () {
   console.log(`Example app listening on port ${port}! Go to https://localhost:${port}/`)
 })
